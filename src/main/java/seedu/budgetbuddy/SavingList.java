@@ -103,7 +103,7 @@ public class SavingList {
             Saving saving = savings.get(index);
             if(saving.getAmount() >= amount){
                 saving.setAmount(saving.getAmount() - amount);
-                System.out.println("Savings reduced successfully!");
+                System.out.println("Savings reduced successfully!   ");
             } else {
                 System.out.println("Insufficient savings amount.");
             }
