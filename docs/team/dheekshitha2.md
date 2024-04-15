@@ -14,20 +14,24 @@ or reduce their savings, thereby improving the app's usability and user experien
   housing. Users can define a maximum spending limit for each category, which helps in monitoring and controlling
   their expenditures.
 - **Justification:** This feature is pivotal for users aiming to adhere to their financial goals, and ensure that they
-  do not overspend in any category
+  do not overspend to align with their financial targets
 - **Highlights:** Implementing this feature requires a deep understanding of the app's different functions and how they
   all work together. One challenge of implementing this feature was integrating existing functions like `Expenses` so that
-  I am able to retrieve the relevant expense information to check if the user is still within their budget.
+  I am able to retrieve the relevant expense information and update the utilised budget, checking if the user is still within their budget
 
 ### New Feature: Added the ability to delete expenses (Pull Request [#25](https://github.com/AY2324S2-CS2113-T12-3/tp/pull/25), [#38](https://github.com/AY2324S2-CS2113-T12-3/tp/pull/38))
 - **What it does:** Allows users to delete expenses that have been added wrongly or are outdated
 - **Justification:** This feature improves the app's flexibility by allowing users to correct their mistakes, ensuring
   that their financial records remain accurate
+- **Highlights:** Ensured that edge cases were handled, such as attempts to delete non-existent records, ensuring robustness. The delete
+function also recalculates the available budget, keeping the users' financial overview up to date
 
 ### New Feature: Added the ability to reduce savings (Pull Request [#25](https://github.com/AY2324S2-CS2113-T12-3/tp/pull/25), [#39](https://github.com/AY2324S2-CS2113-T12-3/tp/pull/39))
 - **What it does:** Enables users to record when they withdraw or spend from their savings, updating savings accordingly
 - **Justification:** Essential for maintaining an accurate record of savings, especially when savings are used to cover 
 unexpected expenses or large purchases
+- **Highlights:** Implemented a fluid interaction between the savings and expenses functions, allowing for automatic adjustments to savings
+when expenses are updated
 
 ## Code contributed: [RepoSense Link](https://nus-cs2113-ay2324s2.github.io/tp-dashboard/?search=Dheekshitha2&breakdown=true&sort=groupTitle%20dsc&sortWithin=title&since=2024-02-23&timeframe=commit&mergegroup=&groupSelect=groupByRepos&checkedFileTypes=docs~functional-code~test-code~other)
 
@@ -48,3 +52,8 @@ unexpected expenses or large purchases
 ### User Guide
 - Added implementation for `reduce savings` and `delete expenses`
 - Added implementation for all the budget functions (Pull Request [#130](https://github.com/AY2324S2-CS2113-T12-3/tp/pull/130))
+
+### Community
+- Added reviews to my teammate's code (Pull Request [#215](https://github.com/AY2324S2-CS2113-T12-3/tp/pull/215/commits/))
+- Added review for the user guide of another team ([Link](https://github.com/nus-cs2113-AY2324S2/tp/pull/24))
+- Reported bugs for another team during the PE-D ([Link](https://github.com/AY2324S2-CS2113-W14-3/tp/issues?q=is%3Aissue+is%3Aclosed))
